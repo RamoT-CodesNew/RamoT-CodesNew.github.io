@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home — Ramo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">
+          <img src="profile.jpg" alt="Profile">
+          <div>
+            <div class="site-title">Ramo</div>
+            <div class="small">Student and Developer</div>
+          </div>
+        </div>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <div class="photo">
+          <img src="profile.jpg" alt="Profile photo">
+        </div>
+        <div class="content">
+          <h1>Welcome</h1>
+          <p>I build small web projects and experiment with layouts and responsive design.</p>
+          <div class="section">
+            <h3>Summary</h3>
+            <ul>
+              <li>Responsive layout</li>
+              <li>Clean navigation</li>
+              <li>Simple footer with university mark</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="more">
+        <h2>Details</h2>
+        <p class="small">This site demonstrates a basic three-page structure and a consistent visual style.</p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="CSU-MB-Logo.jpg" alt="CSUMB logo">
+          <div class="footer-text">California State University, Monterey Bay</div>
+        </div>
+        <div class="footer-text">© <span id="year"></span></div>
+      </div>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
